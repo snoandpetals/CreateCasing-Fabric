@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createcasing-fabric:block/copper_depot"
+    }
+  }
+}

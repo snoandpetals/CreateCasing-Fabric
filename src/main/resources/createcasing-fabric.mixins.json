@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "fr.iglee42.createcasing.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"create.AllArmInteractionPointTypesMixin",
+		"create.AssemblyOperatorBlockItemMixin",
+		"create.CreateMixin",
+		"minecraft.BlockEntityTypeMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

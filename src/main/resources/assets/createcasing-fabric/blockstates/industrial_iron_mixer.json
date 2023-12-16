@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createcasing-fabric:block/industrial_iron_mixer/block"
+    }
+  }
+}
