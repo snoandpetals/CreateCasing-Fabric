@@ -18,6 +18,7 @@ public class CreateCasingClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLASS_SHAFT.get(), RenderType.cutoutMipped());
+		CreateCasing.init();
 		ModPonderTags.register();
 		PonderIndex.register();
 		Create.REGISTRATE.addRegisterCallback(Registries.BLOCK, ModBlocks::registerEncasedShafts);

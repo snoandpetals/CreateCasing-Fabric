@@ -8,6 +8,7 @@ import net.minecraft.core.registries.Registries;
 public class CreateCasingServer implements DedicatedServerModInitializer {
     @Override
     public void onInitializeServer() {
+        CreateCasing.init();
         Create.REGISTRATE.addRegisterCallback(Registries.BLOCK, ModBlocks::registerEncasedShafts);
     };
 }

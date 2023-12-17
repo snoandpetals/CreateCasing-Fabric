@@ -60,9 +60,18 @@ public class CreateCasing implements ModInitializer {
 
 		// todo WHY DON'T WOOD SHAFTS GET ENCASED?
 
+		EnvExecutor.runWhenOn(EnvType.CLIENT, () -> CreateCasingClient::onCtorClient);
+		ServerLifecycleEvents.SERVER_STARTING.register(server -> Create.REGISTRATE.addRegisterCallback(Registries.BLOCK, ModBlocks::registerEncasedShafts) );
+		ServerWorldEvents.LOAD.register((server, level) -> Create.REGISTRATE.addRegisterCallback(Registries.BLOCK, ModBlocks::registerEncasedShafts));
+
+		UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> onPlayerRightClickOnBlock(world, hitResult.getBlockPos(), player.getItemInHand(hand)));
+	}
+
+	public static void init(){
 		//ModConfigs.register();
 		ModSounds.prepare();
 		ModBlocks.register();
+		ModBlocks.registerEncasedShafts();
 		ModBlockEntities.register();
 		//ModCreativeModeTabs.register();
 		//ModPackets.registerPackets();
@@ -72,14 +81,7 @@ public class CreateCasing implements ModInitializer {
 		if (FabricLoader.getInstance().isModLoaded("kubejs")) {
 			KubeJSCompatInit.init();
 		}
-
-		EnvExecutor.runWhenOn(EnvType.CLIENT, () -> CreateCasingClient::onCtorClient);
-		ServerLifecycleEvents.SERVER_STARTING.register(server -> Create.REGISTRATE.addRegisterCallback(Registries.BLOCK, ModBlocks::registerEncasedShafts) );
-		ServerWorldEvents.LOAD.register((server, level) -> Create.REGISTRATE.addRegisterCallback(Registries.BLOCK, ModBlocks::registerEncasedShafts));
-
-		UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> onPlayerRightClickOnBlock(world, hitResult.getBlockPos(), player.getItemInHand(hand)));
 	}
-
 	public static ResourceLocation asResource(String path) {
 		return new ResourceLocation(MODID, path);
 	}
