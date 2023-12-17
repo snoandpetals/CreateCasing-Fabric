@@ -40,7 +40,7 @@ public class MetalShaftBlockEntity extends BracketedKineticBlockEntity {
 //                if (lazyTickCounter % 60 == 0)ModSounds.MLDEG.playAt(level,worldPosition,0.25f,0.5f,false);
 //            }
 //        }
-        //I couldn't get MLDEG to work and honestly I don't want it anyways
+        //I couldn't get MLDEG to work, shout out to MrMLDEG for the inspiration behind this mod's existence!
     }
 
 }
