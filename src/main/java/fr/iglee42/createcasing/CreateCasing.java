@@ -8,6 +8,7 @@ import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipHelper;
 import com.simibubi.create.foundation.item.TooltipModifier;
 import com.tterrag.registrate.fabric.EnvExecutor;
+import fr.iglee42.createcasing.compat.createaddition.CreateAdditionCompatInit;
 import fr.iglee42.createcasing.compat.kubejs.KubeJSCompatInit;
 import fr.iglee42.createcasing.registries.*;
 import net.fabricmc.api.EnvType;
@@ -75,6 +76,9 @@ public class CreateCasing implements ModInitializer {
 		ModBlockEntities.register();
 		//ModCreativeModeTabs.register();
 		//ModPackets.registerPackets();
+		if (FabricLoader.getInstance().isModLoaded("createaddition")) {
+			CreateAdditionCompatInit.init();
+		}
 
 		REGISTRATE.register();
 

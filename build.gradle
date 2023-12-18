@@ -60,7 +60,11 @@ dependencies {
     // Main Showrunners
     modImplementation("com.simibubi.create:create-fabric-${minecraft_version}:${create_version}")
 
+    modImplementation("maven.modrinth:createaddition:${project.cca_version}")
     modImplementation("dev.latvian.mods:kubejs-fabric:${project.kubejs_version}")
+    include modApi("teamreborn:energy:${project.energy_version}") {
+        transitive = false
+    }
     modApi "dev.architectury:architectury-fabric:${project.architectury_version}"
     modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
         exclude(group: "net.fabricmc.fabric-api")

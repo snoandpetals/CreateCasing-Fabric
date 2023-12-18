@@ -137,6 +137,7 @@
   "block.createcasing-fabric.vertical_brass_gearbox": "Vertical Brass Gearbox",
   "block.createcasing-fabric.vertical_copper_gearbox": "Vertical Copper Gearbox",
   "block.createcasing-fabric.vertical_railway_gearbox": "Vertical Railway Gearbox",
+  "block.createcasing-fabric.vertical_industrial_iron_gearbox": "Vertical Industrial Iron Gearbox",
   "block.createcasing-fabric.warped_shaft": "Warped Shaft",
   "block.createcasing-fabric.mldeg_shaft": "MLDEG Shaft",
   "block.createcasing-fabric.andesite_encased_mldeg_shaft": "Andesite Encased Mldeg Shaft",
@@ -147,6 +148,10 @@
   "block.createcasing-fabric.shadow_steel_encased_mldeg_shaft": "Shadow Steel Encased Mldeg Shaft",
   "block.createcasing-fabric.copper_encased_mldeg_shaft": "Copper Encased Mldeg Shaft",
   "block.createcasing-fabric.brass_shaft": "Brass Shaft",
+  "block.createcasing-fabric.andesite_tesla": "Andesite Tesla Coil",
+  "block.createcasing-fabric.copper_tesla": "Copper Tesla Coil",
+  "block.createcasing-fabric.railway_tesla": "Railway Tesla Coil",
+  "block.createcasing-fabric.industrial_iron_tesla": "Industrial Iron Tesla Coil",
 
   "block.createcasing-fabric.brass_shaft.tooltip": "BRASS SHAFT",
   "block.createcasing-fabric.brass_shaft.tooltip.summary" : "_Stop_ when the _stress_ is _upper_ than the _configured stress_. Can be _restarted_ with _redstone_ signal. It doesn't restart automatically",

@@ -169,6 +169,7 @@ public class ModBlocks {
             .transform(BlockStressDefaults.setNoImpact())
             .blockstate(BlockStateGen.axisBlockProvider(false))
             .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
+            .addLayer(() -> RenderType::cutoutMipped)
             .simpleItem()
             .register();
 

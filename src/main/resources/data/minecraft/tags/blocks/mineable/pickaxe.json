@@ -123,6 +123,10 @@
     "createcasing-fabric:copper_depot",
     "createcasing-fabric:railway_depot",
     "createcasing-fabric:industrial_iron_depot",
-    "createcasing-fabric:brass_shaft"
+    "createcasing-fabric:brass_shaft",
+    "createcasing-fabric:andesite_tesla",
+    "createcasing-fabric:copper_tesla",
+    "createcasing-fabric:railway_tesla",
+    "createcasing-fabric:industrial_iron_tesla"
   ]
 }
